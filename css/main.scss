@@ -1,0 +1,36 @@
+body {
+	color: red;
+	background-color: #fff;
+
+	.image-container {
+		h1 {
+		color: green;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	} // closes .image-container
+
+	.homepage-banner {
+		background-color: blue;
+		
+		border-radius: 10%;
+		width: 8rem;
+		height: 8rem;
+		margin: 0 auto;
+		height: auto;
+		padding: 1rem;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+
+		p {
+			color: yellow;
+			font-size: 4rem;
+			line-height: 4.4rem;
+		}
+	}  //  closes homepage-banner
+
+
+} // closes body

@@ -1,0 +1,23 @@
+body {
+  color: red;
+  background-color: #fff; }
+  body .image-container h1 {
+    color: green; }
+  body .image-container img {
+    max-width: 100%; }
+  body .homepage-banner {
+    background-color: blue;
+    border-radius: 10%;
+    width: 8rem;
+    height: 8rem;
+    margin: 0 auto;
+    height: auto;
+    padding: 1rem;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    body .homepage-banner p {
+      color: yellow;
+      font-size: 4rem;
+      line-height: 4.4rem; }
