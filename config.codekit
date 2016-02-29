@@ -45,6 +45,39 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/images\/blue-penguin-iso-rs.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 136989,
+		"inputAbbreviatedPath": "\/images\/blue-penguin-iso-rs.png",
+		"outputAbbreviatedPath": "\/images\/blue-penguin-iso-rs.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/eytanart-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 119634,
+		"inputAbbreviatedPath": "\/images\/eytanart-logo.png",
+		"outputAbbreviatedPath": "\/images\/eytanart-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/hey-diddle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 247050,
+		"inputAbbreviatedPath": "\/images\/hey-diddle.png",
+		"outputAbbreviatedPath": "\/images\/hey-diddle.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/pp-image.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -52,6 +85,17 @@
 		"initialSize": 189652,
 		"inputAbbreviatedPath": "\/images\/pp-image.jpg",
 		"outputAbbreviatedPath": "\/images\/pp-image.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/school-drawing-transp.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 489978,
+		"inputAbbreviatedPath": "\/images\/school-drawing-transp.png",
+		"outputAbbreviatedPath": "\/images\/school-drawing-transp.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
