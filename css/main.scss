@@ -1,12 +1,95 @@
+@mixin mobile {
+   @media (max-width: 500px) {
+       @content;
+   }
+}
+
+@mixin tablet {
+   @media (max-width: 900px) {
+       @content;
+   }
+}
+
+
+
+
 body {
 	color: red;
 	background-color: #fff;
 
-	.logo-container {
-		img {
-			max-width: 100%;
-		}
+	.wrapper {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 2.5%;
 	}
+
+	.header {
+		
+
+		.top-images {
+			.logo-container {
+				float: left;
+				text-align: center;
+				width: 70%;
+
+				img {
+					max-width: 60%;
+
+					@include tablet {
+						max-width: 90%;
+					}
+
+				}
+
+				@include mobile {
+					width: 100%;
+				}
+			}  // logo-container	
+
+			.header-drawings-left, .header-drawings-right {
+				float: left;
+				text-align: left;
+				width: 15%;
+				
+
+				img {
+					max-width: 90%;
+
+
+
+					@include mobile {
+						display: none;
+					}
+				}
+			}
+
+			.header-drawings-right {
+				text-align: right;
+			}
+
+		}  //  top-images	
+
+		nav {
+
+			ul {
+
+				li {
+					
+					float: left;
+					width: 8rem;
+					list-style: none;
+					margin-right: 5%;
+
+					&:last-of-type {
+						margin-right: 0;
+					}
+				}  //  li
+			} // ul
+		} // nav	
+
+	}  // header
+
+	
 
 	.image-container {
 		h1 {
@@ -16,6 +99,8 @@ body {
 		img {
 			max-width: 100%;
 		}
+
+
 	} // closes .image-container
 
 	.homepage-banner {
@@ -36,6 +121,11 @@ body {
 
 
 	}  //  closes homepage-banner
+
+	
+	.penguin {
+			width: 60%;
+		}
 
 	.triangle-obtuse {
 		position:relative;
@@ -68,6 +158,13 @@ body {
 		/* reduce the damage in FF3.0 */
 		display:block;
 		width:0;
+	}
+
+	.group:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+
 	}
 
 
