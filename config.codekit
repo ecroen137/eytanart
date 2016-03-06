@@ -60,6 +60,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/eytan-susan.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.14539e+06,
+		"inputAbbreviatedPath": "\/images\/eytan-susan.jpg",
+		"outputAbbreviatedPath": "\/images\/eytan-susan.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/eytanart-logo.png": {
 		"fileType": 32768,
 		"ignore": 0,

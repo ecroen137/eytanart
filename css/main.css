@@ -1,88 +1,142 @@
+@import url(https://fonts.googleapis.com/css?family=Chewy);
+@import url(https://fonts.googleapis.com/css?family=Rancho);
 body {
-  color: red;
   background-color: #fff; }
+  body img {
+    max-width: 100%; }
   body .wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2.5%; }
-  body .header .top-images .logo-container {
-    float: left;
-    text-align: center;
-    width: 70%; }
-    body .header .top-images .logo-container img {
-      max-width: 60%; }
-      @media (max-width: 900px) {
-        body .header .top-images .logo-container img {
-          max-width: 90%; } }
-    @media (max-width: 500px) {
+    padding: 0 2.5% 2.5% 2.5%; }
+  body .header {
+    margin-bottom: 2rem; }
+    body .header .top-images {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
       body .header .top-images .logo-container {
-        width: 100%; } }
-  body .header .top-images .header-drawings-left, body .header .top-images .header-drawings-right {
-    float: left;
-    text-align: left;
-    width: 15%; }
-    body .header .top-images .header-drawings-left img, body .header .top-images .header-drawings-right img {
-      max-width: 90%; }
-      @media (max-width: 500px) {
+        float: left;
+        text-align: center;
+        width: 70%; }
+        body .header .top-images .logo-container img {
+          max-width: 60%; }
+          @media (max-width: 900px) {
+            body .header .top-images .logo-container img {
+              max-width: 90%; } }
+        @media (max-width: 500px) {
+          body .header .top-images .logo-container {
+            width: 100%; } }
+      body .header .top-images .header-drawings-left, body .header .top-images .header-drawings-right {
+        float: left;
+        text-align: left;
+        width: 15%; }
         body .header .top-images .header-drawings-left img, body .header .top-images .header-drawings-right img {
-          display: none; } }
-  body .header .top-images .header-drawings-right {
-    text-align: right; }
-  body .header nav ul li {
+          max-width: 90%; }
+        @media (max-width: 500px) {
+          body .header .top-images .header-drawings-left, body .header .top-images .header-drawings-right {
+            display: none; } }
+      body .header .top-images .header-drawings-right {
+        text-align: right; }
+    body .header nav ul {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      body .header nav ul li {
+        float: left;
+        width: 8rem;
+        list-style: none;
+        margin-right: 5%;
+        font-family: Chewy, helvetica, arial;
+        font-size: 2rem; }
+        body .header nav ul li:last-of-type {
+          margin-right: 0; }
+        body .header nav ul li a {
+          text-decoration: none;
+          color: purple; }
+          body .header nav ul li a:hover, body .header nav ul li a:active {
+            color: red; }
+  body .homepage-slider {
+    width: 70%;
     float: left;
-    width: 8rem;
-    list-style: none;
-    margin-right: 5%; }
-    body .header nav ul li:last-of-type {
-      margin-right: 0; }
-  body .image-container h1 {
-    color: green; }
-  body .image-container img {
-    max-width: 100%; }
-  body .homepage-banner {
-    background-color: blue;
-    border-radius: 10%;
-    width: 240px;
-    height: 240px;
-    margin: 0 auto;
-    height: auto;
-    padding: 1rem; }
-    body .homepage-banner p {
-      color: yellow;
-      font-size: 2.8rem;
-      line-height: 3rem; }
-  body .penguin {
-    width: 60%; }
-  body .triangle-obtuse {
-    position: relative;
-    padding: 15px;
-    margin: 1em 0 1em;
-    color: #fff;
-    font-size: 2.8rem;
-    line-height: 3rem;
-    background: #c81e2b;
-    /* css3 */
-    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
-    background: -webkit-linear-gradient(#f04349, #c81e2b);
-    background: linear-gradient(#f04349, #c81e2b);
-    border-radius: 10px; }
-  body .triangle-obtuse:before {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    /* value = - border-top-width - border-bottom-width */
-    left: 60px;
-    /* controls horizontal position */
-    border: 0;
-    border-right-width: 30px;
-    /* vary this value to change the angle of the vertex */
-    border-bottom-width: 20px;
-    /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
-    border-style: solid;
-    border-color: transparent #c81e2b;
-    /* reduce the damage in FF3.0 */
+    margin-bottom: 5%; }
+    @media (max-width: 900px) {
+      body .homepage-slider {
+        width: 100%;
+        float: none; } }
+  body .homepage-callout {
+    width: 28%;
+    float: left;
+    padding: 0 0 0 2%;
+    font-family: rancho, helvetica, sans-serif; }
+    body .homepage-callout .penguin {
+      width: 60%;
+      margin: 0 auto; }
+      body .homepage-callout .penguin img {
+        width: 80%; }
+    body .homepage-callout .triangle-obtuse {
+      position: relative;
+      padding: 15px;
+      margin: 0 0 1em;
+      color: #fff;
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      background: #c81e2b;
+      /* css3 */
+      background: -webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
+      background: -webkit-linear-gradient(#f04349, #c81e2b);
+      background: linear-gradient(#f04349, #c81e2b);
+      border-radius: 10px; }
+    body .homepage-callout .triangle-obtuse:before {
+      content: "";
+      position: absolute;
+      bottom: -20px;
+      /* value = - border-top-width - border-bottom-width */
+      left: 60px;
+      /* controls horizontal position */
+      border: 0;
+      border-right-width: 30px;
+      /* vary this value to change the angle of the vertex */
+      border-bottom-width: 20px;
+      /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
+      border-style: solid;
+      border-color: transparent #c81e2b;
+      /* reduce the damage in FF3.0 */
+      display: block;
+      width: 0; }
+    @media (max-width: 900px) {
+      body .homepage-callout {
+        float: right; } }
+  body .homepage-text {
+    font-family: arial, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    width: 80%;
+    margin: 5% auto 0 auto;
     display: block;
-    width: 0; }
+    clear: left; }
+    body .homepage-text h1 {
+      display: inline-block;
+      color: green;
+      font-family: rancho, helvetica, sans-serif;
+      font-size: 3rem;
+      line-height: 2.4rem;
+      margin: 0; }
+    @media (max-width: 900px) {
+      body .homepage-text {
+        width: 70%;
+        margin: 0;
+        float: right;
+        display: inline-block; } }
   body .group:after {
     content: "";
     display: table;
