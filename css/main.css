@@ -137,7 +137,120 @@ body {
         margin: 0;
         float: right;
         display: inline-block; } }
+  body .footer {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 4%; }
+    body .footer .facebook-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+      float: left; }
+      body .footer .facebook-wrapper .snail {
+        display: inline-block;
+        float: left; }
+        body .footer .facebook-wrapper .snail img {
+          max-width: 90%; }
+      body .footer .facebook-wrapper .facebook-bubble {
+        float: left; }
+        body .footer .facebook-wrapper .facebook-bubble .triangle-isosceles {
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+          -webkit-align-items: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          position: relative;
+          padding: 15px;
+          margin: 0;
+          color: #ffffff;
+          font-size: 1.85rem;
+          line-height: 2rem;
+          font-family: Chewy, helvetica, arial;
+          border-radius: 10px;
+          margin-left: 50px;
+          background: #f3961c; }
+          @media (max-width: 500px) {
+            body .footer .facebook-wrapper .facebook-bubble .triangle-isosceles {
+              font-size: 1.4rem;
+              line-height: 1.4rem;
+              margin-left: 15px; } }
+          body .footer .facebook-wrapper .facebook-bubble .triangle-isosceles img {
+            display: inline-block;
+            float: left; }
+        body .footer .facebook-wrapper .facebook-bubble .triangle-isosceles:after {
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          /* value = - border-top-width - border-bottom-width */
+          left: 50px;
+          /* controls horizontal position */
+          border-width: 15px 15px 0;
+          /* vary these values to change the angle of the vertex */
+          border-style: solid;
+          border-color: #f3961c transparent;
+          /* reduce the damage in FF3.0 */
+          display: block;
+          width: 0;
+          top: 30px;
+          /* controls vertical position */
+          left: -50px;
+          /* value = - border-left-width - border-right-width */
+          bottom: auto;
+          border-width: 10px 50px 10px 0;
+          border-color: transparent #f3961c; }
+          @media (max-width: 500px) {
+            body .footer .facebook-wrapper .facebook-bubble .triangle-isosceles:after {
+              left: -30px;
+              border-width: 10px 30px 10px 0; } }
+    body .footer .copyright {
+      float: left;
+      margin-left: 30px; }
+      @media (max-width: 500px) {
+        body .footer .copyright {
+          float: none;
+          margin-left: 0;
+          text-align: center; } }
   body .group:after {
     content: "";
     display: table;
     clear: both; }
+  body .slicknav_menu {
+    display: none;
+    background-color: #ffffff; }
+  body .slicknav_btn {
+    background-color: purple; }
+  body .slicknav_nav {
+    text-align: center; }
+    body .slicknav_nav li {
+      font-size: 1.5rem;
+      margin-bottom: 10%; }
+      body .slicknav_nav li a {
+        color: purple;
+        font-family: Chewy, helvetica, arial; }
+        body .slicknav_nav li a:hover, body .slicknav_nav li a:active {
+          color: red; }
+  @media screen and (max-width: 500px) {
+    body {
+      /* #menu is the original menu */ }
+      body #menu {
+        display: none; }
+      body .slicknav_menu {
+        display: block; } }

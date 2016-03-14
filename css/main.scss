@@ -212,7 +212,101 @@ body {
 
 		 
 
-	}
+	}  //  homepage-text
+
+	.footer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 4%;
+
+		.facebook-wrapper {
+			display: flex;
+			align-items: center;
+			float: left;
+
+			.snail {
+				display: inline-block;
+				float: left;
+
+				img {
+					max-width: 90%;
+				}
+			}	
+
+			.facebook-bubble {
+				float: left;
+
+
+				.triangle-isosceles {
+					display: flex;
+					align-items: center;
+					position:relative;
+					padding:15px;
+					margin:0;
+					color:#ffffff;
+					font-size: 1.85rem;
+					line-height: 2rem;
+					font-family: Chewy, helvetica, arial; 
+					-webkit-border-radius:10px;
+					-moz-border-radius:10px;
+					border-radius:10px;
+					margin-left:50px;
+					background:#f3961c;
+
+					@include mobile {
+						font-size: 1.4rem;
+						line-height: 1.4rem;
+						margin-left: 15px;
+					}
+
+					img {
+						display: inline-block;
+						float: left;
+
+						
+					}
+				}
+
+				.triangle-isosceles:after {
+					content:"";
+					position:absolute;
+					bottom:-15px; /* value = - border-top-width - border-bottom-width */
+					left:50px; /* controls horizontal position */
+					border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+					border-style:solid;
+					border-color:#f3961c transparent;
+					/* reduce the damage in FF3.0 */
+					display:block;
+					width:0;
+					top:30px; /* controls vertical position */
+					left:-50px; /* value = - border-left-width - border-right-width */
+					bottom:auto;
+					border-width:10px 50px 10px 0;
+					border-color:transparent #f3961c;
+
+					@include mobile {
+						left: -30px;
+						border-width: 10px 30px 10px 0;
+					}
+				}
+
+			}  // facebook-bubble
+
+			
+		}  // facebook-wrapper
+
+		.copyright {
+			float: left;
+			margin-left: 30px;
+
+			@include mobile {
+				float: none;
+				margin-left: 0;
+				text-align: center;
+			}
+		}
+	}  //  footer
 
 	
 	
@@ -222,6 +316,50 @@ body {
 	  display: table;
 	  clear: both;
 
+	}
+
+	.slicknav_menu {
+		display:none;
+		background-color: #ffffff;
+	}
+
+	.slicknav_btn {
+		background-color: purple;
+	}
+
+	.slicknav_nav {
+
+		text-align: center;
+		
+		li {
+
+			font-size: 1.5rem;
+			margin-bottom: 10%;	
+
+			a {
+				color: purple;
+				font-family: Chewy, helvetica, arial; 
+
+				&:hover, &:active {
+
+					color: red;
+				}
+
+			}
+		}  // li
+
+		
+	}  // slicknav_nav
+
+	@media screen and (max-width: 500px) {
+		/* #menu is the original menu */
+		#menu {
+			display:none;
+		}
+		
+		.slicknav_menu {
+			display:block;
+		}
 	}
 
 

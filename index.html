@@ -11,7 +11,8 @@
 
 
         <title>EytanArt | Home</title>
-        <link href="css/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.5.5/slicknav.min.css">
+        <link href="css/main.css" rel="stylesheet" />
 
     </head>
 
@@ -33,7 +34,7 @@
                 </div>  <!-- top-images  -->    
 
                 <nav>
-                    <ul class="group">
+                    <ul class="group" id="menu">
                         <li>
                             <a href="#">Home</a>
                         </li>
@@ -92,11 +93,37 @@
                 </div>  <!-- closes group  -->    
             
             </div>  <!-- closes content-container -->
+
+            <div class="footer">
+                <div class="facebook-wrapper group">
+                    <div class="snail">
+                        <img src="images/snail-iso-150x84.png" alt="snail" class="snail" />
+                    </div>    
+                    <div class="facebook-bubble">
+                        <div class="triangle-isosceles">
+                            Like us on Facebook!  <img src="images/bentobee-facebook-icon.png" alt="facebook" />
+                        </div>
+                        
+                    </div> 
+
+         
+                </div>  <!--  closes facebook-wrapper  -->  
+                <div class="copyright">
+                        &copy; 2016: EytanArt.com
+                </div>        
+
+            </div>   <!--  closes footer  -->   
         </div> <!--  closes wrapper  -->    
      
 
         <!-- jQuery Version 1.11.1 -->
         <script src="js/jquery.js"></script>
+        <script src="SlickNav/dist/jquery.slicknav.min.js"></script>
+        <script>
+            $(function(){
+                $('#menu').slicknav();
+            });
+        </script>    
 
 
     </body>
