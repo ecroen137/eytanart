@@ -12,7 +12,10 @@
 
         <title>EytanArt | Home</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.5.5/slicknav.min.css">
+        <link href="jquery.bxslider/jquery.bxslider.css" rel="stylesheet" />
         <link href="css/main.css" rel="stylesheet" />
+
+        
 
     </head>
 
@@ -22,15 +25,31 @@
 
             <div class="header">
                 <div class="top-images group">
+
+                    <ul class="bxslider-header">
+                        <li><img src="images/header-slider/fish-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/leopard-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/octopus-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/black-penguin-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/seahorse-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/tiger-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/purple-penguin-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/shark-150x150.jpg" /></li>
+                        <li><img src="images/header-slider/duck-150x150.jpg" /></li>
+                    </ul>
+
+<!--
                     <div class="header-drawings-left">
                         <img src="images/black-penguin-iso-150x143.png" alt="penguin" />
-                    </div>    
+                    </div>      -->
                     <div class="logo-container">
-                        <img src="images/eytanart-logo.png" alt="EytanArt" />
+                        <img src="images/eytanart-logo2.png" alt="EytanArt" />
                     </div> 
+                   
+                   <!--
                     <div class="header-drawings-right">
                         <img src="images/black-penguin-iso-150x143-2.png" alt="penguin" />
-                    </div>  
+                    </div>      -->
                 </div>  <!-- top-images  -->    
 
                 <nav>
@@ -60,9 +79,14 @@
                 <div class="group">
                     <div class="homepage-slider">
                            
-                        <div class="image-container">
-                            <img src="images/eytan-susan.jpg" />
-                        </div>    
+                        <ul class="bxslider">
+                            <li><img src="images/homepage-slider/eytan-susan-800x600.jpg"/></li>
+                            <li><img src="images/homepage-slider/Schooldesign-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/3Sweatshirts-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/collage1-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/EytanplayingHSC-800x600.jpg" /></li>
+                        </ul>    
+
                             
                     </div>  <!-- closes homepage-slider -->
                     
@@ -81,20 +105,16 @@
                     <div class="homepage-text">
                         
                         <span>    
-                            <h1>EytanArt</h1>   &nbsp; lorem ipsum dolor sit amet, consectetur adipiscing    elit. Aliquam eleifend, ex a tempor facilisis, lorem sapien tincidunt sapien, eu tincidunt velit massa sit amet turpis.
+                            <h1>EytanArt</h1>   &nbsp;  is the inspiration of Eytan Nisinzweig, an artist with autism, who sees the purity in life and captures it with simplistic honesty, and his mother Susan Nisinzweig, a social worker committed to helping kids and adults feel accepted and respected in their homes, schools, communities and their world.
                         </span>
-                        <p>
-                            Aliquam vel nisl urna. Praesent tempor viverra scelerisque. Aenean sodales metus ut dolor dapibus efficitur. In vel ligula justo. Maecenas eget mauris rhoncus mauris ultrices fringilla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                        </p>
-                        <p>    
-                            Phasellus malesuada blandit neque, quis pellentesque mi condimentum ac. Proin efficitur vel eros sit amet sagittis. Integer convallis accumsan nunc id laoreet. Mauris maximus nisi vel viverra sagittis. Suspendisse potenti. Sed interdum ex lorem, eu rutrum ligula mollis eget. Duis vel libero metus.
-                        </p>    
+                        
+                        
                     </div>  <!--  closes homepage-text  -->  
                 </div>  <!-- closes group  -->    
             
             </div>  <!-- closes content-container -->
 
-            <div class="footer">
+            <div class="footer group">
                 <div class="facebook-wrapper group">
                     <div class="snail">
                         <img src="images/snail-iso-150x84.png" alt="snail" class="snail" />
@@ -119,11 +139,30 @@
         <!-- jQuery Version 1.11.1 -->
         <script src="js/jquery.js"></script>
         <script src="SlickNav/dist/jquery.slicknav.min.js"></script>
+        <script src="jquery.bxslider/jquery.bxslider.min.js"></script>
+        
+        
         <script>
-            $(function(){
+            
+            $(document).ready(function(){
                 $('#menu').slicknav();
+                $('.bxslider').bxSlider();
+
+                $('.bxslider-header').bxSlider({
+                    minSlides: 6,
+                    maxSlides: 9,
+                    slideWidth: 170,
+                    slideMargin: 10,
+                    ticker: true,
+                    autoDirection: 'prev',
+                    speed: 27000
+                });
+
+
             });
+
         </script>    
+
 
 
     </body>

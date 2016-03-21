@@ -40,13 +40,33 @@ body {
 
 		.top-images {
 
-			display: flex;
-			align-items: center;
+			position: relative;
+
+			div.bx-wrapper {
+				margin-top: 25px;
+				max-width: 1200px;
+				position: relative;
+				z-index: 1;
+
+				.bx-viewport {
+					box-shadow: none;
+					border: none;
+				}
+			}
+
+			.bxslider-header {
+				
+
+				
+			}  //  bxslider-header
 
 			.logo-container {
-				float: left;
+				//float: left;
 				text-align: center;
-				width: 70%;
+				width: 100%;
+				position: absolute;
+				z-index: 2;
+				top: 5px;
 
 				img {
 					max-width: 60%;
@@ -126,6 +146,13 @@ body {
 		@include tablet {
 			width: 100%;
 			float: none;
+		}
+
+		.bxslider {
+
+			img {
+				margin: 0 auto;
+			}
 		}
 	}
 
