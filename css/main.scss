@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Chewy);
 @import url(https://fonts.googleapis.com/css?family=Rancho);
+@import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
 
 // Begin Mixins
@@ -48,9 +49,19 @@ body {
 				position: relative;
 				z-index: 1;
 
+
+				
+
 				.bx-viewport {
 					box-shadow: none;
 					border: none;
+					min-height: 170px;
+
+					@include mobile {
+						min-height: 80px;
+					}	
+
+
 				}
 			}
 
@@ -72,12 +83,14 @@ body {
 					max-width: 60%;
 
 					@include tablet {
-						max-width: 90%;
+						max-width: 70%;
 					}
 				}
 
+
 				@include mobile {
-					width: 100%;
+					
+					top: 0;
 				}
 			}  // logo-container	
 
@@ -107,19 +120,28 @@ body {
 			ul {
 
 				display: flex;
-				justify-content: center;	
+				justify-content: center;
+
+				@include tablet {
+					padding-left: 0;
+				}	
 
 				li {
 					
 					float: left;
-					width: 8rem;
+					//width: 8rem;
 					list-style: none;
-					margin-right: 5%;
+					margin-right: 7.5%;
 					font-family: Chewy, helvetica, arial;
 					font-size: 2rem;
 
 					&:last-of-type {
 						margin-right: 0;
+					}
+
+					@include tablet {
+						font-size: 1.65rem;
+						margin-right: 5%;
 					}
 
 					a {
@@ -160,7 +182,7 @@ body {
 		width: 28%;
 		float: left;
 		padding: 0 0 0 2%;
-		font-family: rancho, helvetica, sans-serif;
+		
 		
 		.penguin {
 			width: 60%;
@@ -168,6 +190,16 @@ body {
 
 			img {
 				width: 80%;
+			
+			}
+
+			@include tablet {
+				width: 90%;
+
+			}
+
+			@include mobile {
+				text-align: right;
 			}
 		}
 
@@ -176,17 +208,23 @@ body {
 			padding:15px;
 			margin:0 0 1em;
 			color:#fff;
-			font-size: 1.8rem;
-			line-height: 2.4rem;
-			background:#c81e2b;
-			/* css3 */
-			background:-webkit-gradient(linear, 0 0, 0 100%, from(#f04349), to(#c81e2b));
-			background:-moz-linear-gradient(#f04349, #c81e2b);
-			background:-o-linear-gradient(#f04349, #c81e2b);
-			background:linear-gradient(#f04349, #c81e2b);
-			-webkit-border-radius:10px;
-			-moz-border-radius:10px;
+			font-size: 2rem;
+			line-height: 2.5rem;
+			background:#f3961c;
 			border-radius:10px;
+			font-family: 'Coming Soon', arial, sans-serif;
+
+			@include tablet {
+				font-size: 1.2rem;
+				line-height: 1.8rem;
+				padding: 10px;
+			}
+
+			@include mobile {
+				font-size: 1rem;
+				line-height: 1.5rem;
+				padding: 8px;
+			}
 		}  //  triangle-obtuse
 
 		.triangle-obtuse:before {
@@ -198,10 +236,15 @@ body {
 			border-right-width:30px; /* vary this value to change the angle of the vertex */
 			border-bottom-width:20px; /* vary this value to change the height of the triangle. must be equal to the corresponding value in :after */
 			border-style:solid;
-			border-color:transparent #c81e2b;
+			border-color:transparent #f3961c;
 			/* reduce the damage in FF3.0 */
 			display:block;
 			width:0;
+
+			@include tablet {
+				left: 6px;
+			}
+
 		}  // triangle-obtuse:before
 
 		@include tablet {
@@ -214,8 +257,8 @@ body {
 	.homepage-text {
 
 		font-family: arial, sans-serif;
-	 	font-size: 1.8rem;
-	 	line-height: 2.4rem;
+	 	font-size: 1.4rem;
+	 	line-height: 2rem;
 	 	width: 80%;
 	 	margin: 5% auto 0 auto;
 	 	display: block;
@@ -226,7 +269,7 @@ body {
 		 	color: green;
 		 	font-family: rancho, helvetica, sans-serif;
 		 	font-size: 3rem;
-		 	line-height: 2.4rem;
+		 	line-height: 3.4rem;
 		 	margin: 0;
 		}
 
@@ -235,6 +278,8 @@ body {
 			margin: 0;
 			float: right;
 			display: inline-block;
+			font-size: 1.2rem;
+			line-height: 1.8rem;
 		}
 
 		 
@@ -274,7 +319,7 @@ body {
 					color:#ffffff;
 					font-size: 1.85rem;
 					line-height: 2rem;
-					font-family: Chewy, helvetica, arial; 
+					font-family: 'Coming Soon', arial, sans-serif;
 					-webkit-border-radius:10px;
 					-moz-border-radius:10px;
 					border-radius:10px;
@@ -282,7 +327,7 @@ body {
 					background:#f3961c;
 
 					@include mobile {
-						font-size: 1.4rem;
+						font-size: 1.2rem;
 						line-height: 1.4rem;
 						margin-left: 15px;
 					}
@@ -291,9 +336,11 @@ body {
 						display: inline-block;
 						float: left;
 
-						
+						@include mobile {
+							width: 50%;
+						}						
 					}
-				}
+				}  // triangle-isosceles
 
 				.triangle-isosceles:after {
 					content:"";
@@ -378,10 +425,11 @@ body {
 		
 	}  // slicknav_nav
 
-	@media screen and (max-width: 500px) {
+	@media screen and (max-width: 550px) {
 		/* #menu is the original menu */
 		#menu {
 			display:none;
+			height: 0;
 		}
 		
 		.slicknav_menu {

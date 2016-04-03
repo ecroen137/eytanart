@@ -61,6 +61,9 @@
                             <a href="#">About</a>
                         </li>
                         <li>
+                            <a href="#">Fundraisers</a>
+                        </li>
+                        <li>
                             <a href="#">Shop</a>
                         </li>
                         <li>
@@ -80,11 +83,15 @@
                     <div class="homepage-slider">
                            
                         <ul class="bxslider">
-                            <li><img src="images/homepage-slider/eytan-susan-800x600.jpg"/></li>
-                            <li><img src="images/homepage-slider/Schooldesign-800x600.jpg" /></li>
-                            <li><img src="images/homepage-slider/3Sweatshirts-800x600.jpg" /></li>
+                            
+                            
+                            <li><img src="images/homepage-slider/EASlide1.jpg"/></li>
+                            <li><img src="images/homepage-slider/hallway-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/giveandgetreal-800x600.jpg" /></li>
                             <li><img src="images/homepage-slider/collage1-800x600.jpg" /></li>
-                            <li><img src="images/homepage-slider/EytanplayingHSC-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/designs-collage-2.jpg"/></li>
+                            <li><img src="images/homepage-slider/collage2-800x600.jpg" /></li>
+                            <li><img src="images/homepage-slider/designs-collage-1.jpg"/></li>
                         </ul>    
 
                             
@@ -93,7 +100,7 @@
                     <div class="homepage-callout">
                         
                         <div class="triangle-obtuse">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec leo nec odio sodales varius.
+                            Buy a gift or use EytanArt to do a fundraiser for&nbsp;your organization, school, or&nbsp;club.
                         </div> 
                         <div class="image-container penguin">
                             <img src="images/blue-penguin-iso-rs.png" alt="Blue penguin" />
@@ -104,11 +111,19 @@
 
                     <div class="homepage-text">
                         
-                        <span>    
-                            <h1>EytanArt</h1>   &nbsp;  is the inspiration of Eytan Nisinzweig, an artist with autism, who sees the purity in life and captures it with simplistic honesty, and his mother Susan Nisinzweig, a social worker committed to helping kids and adults feel accepted and respected in their homes, schools, communities and their world.
-                        </span>
+                           
+                            <h1>EytanArt - Designs About Difference</h1>  
+                            <p>
+                                <strong>T-Shirts, Posters and Gifts with a message of respecting difference &amp making a difference</strong>
+                            </p> 
+                            <p>
+                                EytanArt is the inspiration of Eytan Nisinzweig, an artist with autism, who sees the purity in life and captures it with simplistic honesty, and his mother Susan Nisinzweig, a social worker committed to helping kids and adults feel accepted and respected in their homes, schools, communities and their world.
+                            </p>    
+                       
+
+                       
                         
-                        
+
                     </div>  <!--  closes homepage-text  -->  
                 </div>  <!-- closes group  -->    
             
@@ -146,7 +161,12 @@
             
             $(document).ready(function(){
                 $('#menu').slicknav();
-                $('.bxslider').bxSlider();
+                $('.bxslider').bxSlider({
+                    auto: true,
+                    controls: false,
+                    speed: 14000,
+                    autoDirection: 'prev'
+                });
 
                 $('.bxslider-header').bxSlider({
                     minSlides: 6,
@@ -155,7 +175,7 @@
                     slideMargin: 10,
                     ticker: true,
                     autoDirection: 'prev',
-                    speed: 27000
+                    speed: 220000
                 });
 
 
