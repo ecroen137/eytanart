@@ -2,7 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Rancho);
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  /* Container DIV */
+  /* Clip DIV */
+  /* Explicitly set height/width of each list item */ }
   body img {
     max-width: 100%; }
   body .wrapper {
@@ -206,12 +209,18 @@ body {
           max-width: 90%; }
       body .content-container .about-text .octopus-wrapper .octopus-bubble {
         float: left;
-        width: 80%; }
+        width: 60%; }
+        @media (max-width: 900px) {
+          body .content-container .about-text .octopus-wrapper .octopus-bubble {
+            width: 70%; } }
+        @media (max-width: 500px) {
+          body .content-container .about-text .octopus-wrapper .octopus-bubble {
+            width: 80%; } }
         body .content-container .about-text .octopus-wrapper .octopus-bubble .triangle-isosceles {
           display: flex;
           align-items: center;
           position: relative;
-          padding: 15px;
+          padding: 5px 10px 5px 10px;
           margin: 0;
           color: #ffffff;
           font-size: 1.85rem;
@@ -258,6 +267,170 @@ body {
             body .content-container .about-text .octopus-wrapper .octopus-bubble .triangle-isosceles:after {
               left: -30px;
               border-width: 10px 30px 10px 0; } }
+    body .content-container .fundraisers-text h2 {
+      color: green;
+      font-family: rancho, helvetica, sans-serif;
+      font-size: 3rem;
+      line-height: 3.4rem;
+      text-align: center; }
+    body .content-container .fundraisers-text .fundraisers-text-wrapper {
+      width: 60%;
+      margin: 0 auto;
+      font-family: arial, sans-serif;
+      font-size: 1.4rem;
+      line-height: 2rem;
+      margin-bottom: 7.5%; }
+      @media (max-width: 900px) {
+        body .content-container .fundraisers-text .fundraisers-text-wrapper {
+          width: 70%; } }
+      @media (max-width: 500px) {
+        body .content-container .fundraisers-text .fundraisers-text-wrapper {
+          width: 80%;
+          font-size: 1.2rem;
+          line-height: 1.6rem; } }
+    body .content-container .fundraisers-text .fundraisers-animal-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 7.5%; }
+      body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal {
+        display: inline-block;
+        float: left;
+        width: 20%;
+        text-align: center; }
+        body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal img {
+          max-width: 90%; }
+        @media (max-width: 900px) {
+          body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal {
+            width: 30%; } }
+      body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble {
+        float: left;
+        width: 40%; }
+        @media (max-width: 900px) {
+          body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble {
+            width: 45%; } }
+        body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles, body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right {
+          display: flex;
+          align-items: center;
+          position: relative;
+          padding: 5px 10px 5px 10px;
+          margin: 0;
+          color: #ffffff;
+          font-size: 1.85rem;
+          line-height: 2rem;
+          font-family: 'Coming Soon', arial, sans-serif;
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          border-radius: 10px;
+          margin-left: 50px;
+          background: #f3961c; }
+          @media (max-width: 500px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles, body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right {
+              font-size: 1.2rem;
+              line-height: 1.4rem;
+              margin-left: 15px; } }
+          body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles img, body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right img {
+            display: inline-block;
+            float: left; }
+            @media (max-width: 500px) {
+              body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles img, body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right img {
+                width: 50%; } }
+        body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles:after {
+          content: "";
+          position: absolute;
+          bottom: -15px;
+          /* value = - border-top-width - border-bottom-width */
+          left: 50px;
+          /* controls horizontal position */
+          border-width: 15px 15px 0;
+          /* vary these values to change the angle of the vertex */
+          border-style: solid;
+          border-color: #f3961c transparent;
+          /* reduce the damage in FF3.0 */
+          display: block;
+          width: 0;
+          top: 30px;
+          /* controls vertical position */
+          left: -50px;
+          /* value = - border-left-width - border-right-width */
+          bottom: auto;
+          border-width: 10px 50px 10px 0;
+          border-color: transparent #f3961c; }
+          @media (max-width: 900px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles:after {
+              top: 80px; } }
+          @media (max-width: 500px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles:after {
+              left: -30px;
+              top: 60px;
+              border-width: 10px 30px 10px 0; } }
+        body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right {
+          margin-left: 0;
+          margin-right: 50px; }
+        body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right:after {
+          content: "";
+          position: absolute;
+          border-style: solid;
+          border-color: #f3961c transparent;
+          /* reduce the damage in FF3.0 */
+          display: block;
+          width: 0;
+          left: -50px;
+          /* value = - border-left-width - border-right-width */
+          bottom: auto;
+          border-width: 10px 50px 10px 0;
+          border-color: transparent #f3961c;
+          top: 30px;
+          /* controls vertical position */
+          right: -50px;
+          /* value = - border-left-width - border-right-width */
+          bottom: auto;
+          left: auto;
+          border-width: 10px 0 10px 50px;
+          border-color: transparent #f3961c; }
+          @media (max-width: 900px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right:after {
+              top: 50px; } }
+          @media (max-width: 600px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right:after {
+              top: 75px; } }
+          @media (max-width: 500px) {
+            body .content-container .fundraisers-text .fundraisers-animal-wrapper .fundraisers-animal-bubble .triangle-isosceles-right:after {
+              top: 90px; } }
+    body .content-container .fundraisers-text .fundraisers-product-wrapper {
+      width: 30%;
+      float: left; }
+      body .content-container .fundraisers-text .fundraisers-product-wrapper .fundraisers-product {
+        float: left;
+        width: 50%; }
+        body .content-container .fundraisers-text .fundraisers-product-wrapper .fundraisers-product img {
+          max-width: 100%; }
+        @media (max-width: 600px) {
+          body .content-container .fundraisers-text .fundraisers-product-wrapper .fundraisers-product {
+            float: none;
+            width: 90%;
+            margin: 0 auto; } }
+    body .content-container .shop-text h3 {
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      text-align: center; }
+    body .content-container .shop-text .product-row {
+      display: flex;
+      justify-content: center; }
+      body .content-container .shop-text .product-row .product-item-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+        width: 25%;
+        margin: 5%; }
+        body .content-container .shop-text .product-row .product-item-wrapper a {
+          text-align: center; }
+        body .content-container .shop-text .product-row .product-item-wrapper .product-description {
+          margin-top: 5%;
+          font-size: 1.2rem;
+          line-height: 1.6rem;
+          text-align: center; }
   body .footer {
     display: flex;
     justify-content: center;
@@ -360,3 +533,15 @@ body {
         height: 0; }
       body .slicknav_menu {
         display: block; } }
+  body .simply-scroll {
+    width: 800px;
+    height: 600px;
+    margin-bottom: 1em; }
+  body .simply-scroll .simply-scroll-clip {
+    width: 800px;
+    height: 600px; }
+  body .simply-scroll .simply-scroll-list li {
+    float: left;
+    /* Horizontal scroll only */
+    width: 800px;
+    height: 600px; }
