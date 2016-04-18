@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Chewy);
-@import url(https://fonts.googleapis.com/css?family=Rancho);
 @import url(https://fonts.googleapis.com/css?family=Coming+Soon);
 
 
@@ -34,6 +33,10 @@ body {
 	img {
 		max-width: 100%;
 	}	
+
+	.circle-image {
+		border-radius: 50%;
+	}
 
 	.wrapper {
 		max-width: 1200px;
@@ -158,9 +161,21 @@ body {
 							color: red;
 						}
 					}
+
+					&:hover > ul, &:active > ul {
+						display: block;
+					}
 				}  //  li
+
+				ul {
+					display: none;
+				}
 			} // ul
+
 		} // nav	
+
+			
+
 
 	}  // header
 
@@ -277,10 +292,20 @@ body {
 			h1 {
 			 	display: inline-block;
 			 	color: green;
-			 	font-family: rancho, helvetica, sans-serif;
+			 	font-family: 'coming soon', helvetica, sans-serif;
 			 	font-size: 3rem;
 			 	line-height: 3.4rem;
 			 	margin: 0;
+
+			 	@include tablet {
+			 		font-size: 2.5rem;
+			 		line-height: 3rem;
+			 	}
+
+			 	@include mobile {
+			 		font-size: 2rem;
+			 		line-height: 2.5rem;
+			 	}
 			}
 
 			@include tablet {
@@ -434,9 +459,9 @@ body {
 
 			h2 {
 				color: green;
-			 	font-family: rancho, helvetica, sans-serif;
-			 	font-size: 3rem;
-			 	line-height: 3.4rem;
+			 	font-family: 'coming soon', helvetica, sans-serif;
+			 	font-size: 2.4rem;
+			 	line-height: 3rem;
 			 	text-align: center;
 			}
 
@@ -456,6 +481,10 @@ body {
 			 		width: 80%;
 			 		font-size: 1.2rem;
 			 		line-height: 1.6rem;
+			 	}
+
+			 	.red {
+			 		color: red;
 			 	}
 
 			}
@@ -623,6 +652,56 @@ body {
 				text-align: center;
 			}
 
+			p {
+				text-align: right;
+			}
+
+			h2 {
+				text-align: center;
+				font-size: 2.8rem;
+				font-weight: bold;
+				color: green;
+				font-family: 'Coming Soon', arial, sans-serif;
+			}
+
+			.shop-subnav {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 90%;
+				margin: 0 auto;
+				
+				@include tablet {
+					display: block;
+					width: 90%;
+					margin: 0 auto;
+				}
+
+				ul{
+					width: 24rem;
+					float: left;
+
+					@include tablet {
+						width: auto;
+					}
+
+					li {
+						list-style: none;
+						margin-bottom: 7.5%;
+						font-size: 1.4rem;
+						line-height: 2rem;
+
+						@include tablet {
+							font-size: 1.2rem;
+						}
+
+						a {
+							
+						}
+					}
+				}
+			}
+
 			.product-row {
 				display: flex;
 				justify-content: center;
@@ -633,7 +712,11 @@ body {
 					align-items: center;
 					float: left;
 					width: 25%;
-					margin: 5%;
+					margin: 3%;
+
+					@include mobile {
+						margin: 5%;
+					}
 
 					a {
 						text-align: center;
@@ -648,12 +731,245 @@ body {
 
 
 
-				}
-			}
+				}  //  product-item-wrapper
+			}  //  product-row
 
 			
 
 		}  // shop-text
+
+		.blog-text {
+			width: 60%;
+			margin: 0 auto;
+
+			@include tablet {
+				width: 70%;
+			}
+
+			@include mobile-plus {
+				width: 80%;
+			}
+
+			.blog-post {
+				margin-bottom: 7.5%;
+
+				.blog-post-header {
+					margin-bottom: 5%;
+
+					h2 {
+						font-size: 2.2rem;
+						line-height: 3rem;
+						color: green;
+			 			font-family: 'coming soon', helvetica, sans-serif;
+			 			margin-bottom: 0;
+			 			padding-bottom: 0;
+					}
+
+					.blog-post-date {
+						margin-top: 1%;
+						padding-top: 0;
+						font-size: 1rem;
+						line-height: 1.2rem;
+						color: gray;
+						font-style: italic;
+
+					}  //  blog-post-date
+				}  //  blog-post-header
+
+				.blog-post-body {
+					font-size: 1.4rem;
+					line-height: 2rem;
+
+					img {
+						float: right;
+						margin-left: 10px;
+						margin-bottom: 10px;
+						max-width: 50%;
+					}
+
+					.left-img {
+						float: left;
+						margin-right: 20px;
+						margin-left: 0;
+						border-radius: 5%;
+					}
+					
+					.float-images {
+						width: 90%;
+						display: flex;
+						justify-content: center;
+						margin: 0 auto;
+
+						@include tablet {
+							display: block;
+							text-align: center;
+						}
+
+						img {
+							display: flex;
+							height: auto;
+							max-width: 90%;
+							border-radius: 5%;
+
+							@include tablet {
+								display: block;
+								margin-bottom: 5%;
+								text-align: center;
+							}
+						}
+					}  // float-images
+
+					hr {
+						margin-top: 7.5%;
+						margin-bottom: 7.5%;
+					}
+
+				}  //  blog-post-body
+
+			}  //  blog-post
+		}  //  blog-text
+
+
+		.contact-text {
+			
+			.fish-wrapper {
+				display: flex;
+				align-items: center;
+				width: 60%;
+				margin: 0 auto 5% auto;
+
+				@include tablet {
+					width: 80%;
+				}
+
+				@include mobile-plus {
+					width: 90%;
+				}
+
+				.fish {
+					display: inline-block;
+					float: left;
+
+					img {
+						width: 100%;
+					}
+				}  // fish	
+
+				.fish-bubble {
+					float: left;
+
+
+					.triangle-isosceles {
+						display: flex;
+						align-items: center;
+						position:relative;
+						padding:15px;
+						margin:0;
+						color:#ffffff;
+						font-size: 1.85rem;
+						line-height: 2.6rem;
+						font-family: 'Coming Soon', arial, sans-serif;
+						-webkit-border-radius:10px;
+						-moz-border-radius:10px;
+						border-radius:10px;
+						margin-left:50px;
+						background:#f3961c;
+
+						@include mobile {
+							font-size: 1.2rem;
+							line-height: 1.4rem;
+							margin-left: 15px;
+						}
+
+						img {
+							display: inline-block;
+							float: left;
+
+							@include mobile {
+								width: 50%;
+							}						
+						}
+					}  // triangle-isosceles
+
+					.triangle-isosceles:after {
+						content:"";
+						position:absolute;
+						bottom:-15px; /* value = - border-top-width - border-bottom-width */
+						left:50px; /* controls horizontal position */
+						border-width:15px 15px 0; /* vary these values to change the angle of the vertex */
+						border-style:solid;
+						border-color:#f3961c transparent;
+						/* reduce the damage in FF3.0 */
+						display:block;
+						width:0;
+						top:30px; /* controls vertical position */
+						left:-50px; /* value = - border-left-width - border-right-width */
+						bottom:auto;
+						border-width:10px 50px 10px 0;
+						border-color:transparent #f3961c;
+
+						@include mobile {
+							left: -30px;
+							border-width: 10px 30px 10px 0;
+						}
+					}  //  triangle-isosceles: after
+
+				}  // fish-bubble
+
+			}  //  fish-wrapper	
+
+			form {
+				display: block;
+				width: 60%;
+				margin: 0 auto;
+
+
+				input {
+					margin-bottom: 10%;
+					width: 90%;
+					padding: 1rem;
+					font-size: 1.4rem;
+					line-height: 2rem;
+				}
+
+				textarea {
+					width: 90%;
+					padding: 1rem;
+					font-size: 1.4rem;
+					line-height: 2rem;
+				}
+
+				input[type=submit], input[type=reset] {
+				    padding:2% 5%; 
+				    margin-right: 5%;
+				    float: left;
+				   
+				    background-color: green; 
+				    border:0 none;
+				    color: white;
+				    width: 125px;
+				    height: 125px;
+				    cursor:pointer;
+				    -webkit-border-radius: 50%;
+				    border-radius: 50%; 
+
+				    &:hover, &:active {
+
+						color: red;
+					}
+
+					@include tablet {
+						width: 90px;
+						height: 90px;
+					}
+				}
+
+				input[type=reset] {
+					background-color: gray;
+				}
+
+			}  //  form
+		}
 
 
 	}  //  content-container	
@@ -800,6 +1116,10 @@ body {
 		
 	}  // slicknav_nav
 
+	.sy-controls li a:after {
+				background-color: rgba(44, 184, 75, 0.72);
+			}
+		
 
 
 	@media screen and (max-width: 550px) {

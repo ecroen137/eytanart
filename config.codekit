@@ -11,6 +11,24 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/blog.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/blog.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/contact.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/contact.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/css\/main.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -44,6 +62,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/images\/3penguins300x3392-265x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15280,
+		"inputAbbreviatedPath": "\/images\/3penguins300x3392-265x300.jpg",
+		"outputAbbreviatedPath": "\/images\/3penguins300x3392-265x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/images\/bentobee-facebook-icon.png": {
 		"fileType": 32768,
@@ -89,6 +118,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Cesaria-with-more-friends-300x200.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25130,
+		"inputAbbreviatedPath": "\/images\/Cesaria-with-more-friends-300x200.jpg",
+		"outputAbbreviatedPath": "\/images\/Cesaria-with-more-friends-300x200.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/EA-Flamingo-Provincetown-300x300.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -107,6 +147,17 @@
 		"initialSize": 14480,
 		"inputAbbreviatedPath": "\/images\/EA-school-tote_coscob-300x300.jpg",
 		"outputAbbreviatedPath": "\/images\/EA-school-tote_coscob-300x300.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/EA-world-save-the-planet-300x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14986,
+		"inputAbbreviatedPath": "\/images\/EA-world-save-the-planet-300x300.jpg",
+		"outputAbbreviatedPath": "\/images\/EA-world-save-the-planet-300x300.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -155,6 +206,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/EN3birds_small-300x206.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19314,
+		"inputAbbreviatedPath": "\/images\/EN3birds_small-300x206.jpg",
+		"outputAbbreviatedPath": "\/images\/EN3birds_small-300x206.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Eytan-and-Aviv-300x218.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 25365,
+		"inputAbbreviatedPath": "\/images\/Eytan-and-Aviv-300x218.jpg",
+		"outputAbbreviatedPath": "\/images\/Eytan-and-Aviv-300x218.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Eytan-and-Jacque-on-camel-300x200.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 12805,
+		"inputAbbreviatedPath": "\/images\/Eytan-and-Jacque-on-camel-300x200.jpg",
+		"outputAbbreviatedPath": "\/images\/Eytan-and-Jacque-on-camel-300x200.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/Eytan-picture-300x291.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -173,6 +257,17 @@
 		"initialSize": 1.14539e+06,
 		"inputAbbreviatedPath": "\/images\/eytan-susan.jpg",
 		"outputAbbreviatedPath": "\/images\/eytan-susan.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/EytanArt-200x300.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 51757,
+		"inputAbbreviatedPath": "\/images\/EytanArt-200x300.jpg",
+		"outputAbbreviatedPath": "\/images\/EytanArt-200x300.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -228,6 +323,28 @@
 		"initialSize": 47877,
 		"inputAbbreviatedPath": "\/images\/flamingo-iso-150w.png",
 		"outputAbbreviatedPath": "\/images\/flamingo-iso-150w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Friendship-Circle.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5367,
+		"inputAbbreviatedPath": "\/images\/Friendship-Circle.jpg",
+		"outputAbbreviatedPath": "\/images\/Friendship-Circle.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/Friendshipcirclefriends-300x224.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21345,
+		"inputAbbreviatedPath": "\/images\/Friendshipcirclefriends-300x224.jpg",
+		"outputAbbreviatedPath": "\/images\/Friendshipcirclefriends-300x224.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -342,6 +459,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/Heydiddle-small.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 40394,
+		"inputAbbreviatedPath": "\/images\/Heydiddle-small.jpg",
+		"outputAbbreviatedPath": "\/images\/Heydiddle-small.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/homepage-slider\/3Sweatshirts-800x600.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -349,6 +477,17 @@
 		"initialSize": 138219,
 		"inputAbbreviatedPath": "\/images\/homepage-slider\/3Sweatshirts-800x600.jpg",
 		"outputAbbreviatedPath": "\/images\/homepage-slider\/3Sweatshirts-800x600.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/homepage-slider\/collage.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 433483,
+		"inputAbbreviatedPath": "\/images\/homepage-slider\/collage.jpg",
+		"outputAbbreviatedPath": "\/images\/homepage-slider\/collage.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -470,6 +609,28 @@
 		"initialSize": 86319,
 		"inputAbbreviatedPath": "\/images\/homepage-slider\/Schooldesign-800x600.jpg",
 		"outputAbbreviatedPath": "\/images\/homepage-slider\/Schooldesign-800x600.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20920,
+		"inputAbbreviatedPath": "\/images\/icon.png",
+		"outputAbbreviatedPath": "\/images\/icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/menorkey.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 207096,
+		"inputAbbreviatedPath": "\/images\/menorkey.jpg",
+		"outputAbbreviatedPath": "\/images\/menorkey.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
